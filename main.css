@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: 'Cinzel';
     font-style: normal;
     font-weight: 700;
@@ -12,7 +12,7 @@
     font-weight: 400;
     src: local('PT Mono'), local('PTMono-Regular'), url(../font/pt_mono.woff) format('woff');
   }
-  
+   */
   html, body { 
     padding: 0;
     margin: 0;
@@ -20,16 +20,16 @@
   
   body {
     font-family: Georgia, 'Nimbus Roman No9 L', 'Century Schoolbook L', serif;
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 15px;
+    line-height: 1.6;
     color: black;
     background: white;
   }
   
   article {
     margin: 0 auto;
-    max-width: 35em;
-    padding: 2em 1em 5em;
+    max-width: 40em;
+    padding: 5em 1em 5em;
     position: relative;
     overflow-wrap: break-word;
   }
@@ -101,6 +101,7 @@
   
   h1 {
     font-size: 180%;
+    margin-top: 4rem;
   }
   h2 {
     font-size: 115%;
@@ -497,6 +498,122 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
+/* menu lateral */
+
+  #menu_lateral{
+    position: fixed;
+    top: 6%;
+    left: 0;
+    width: 10%;
+    height: 100%;
+    background-color: transparent;
+    overflow-x: hidden;
+    padding-top: 20px;
+    z-index: 1;
+
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+#menu_lateral a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+    display: block;
+    cursor: pointer;
+
+}
+
+/* sub_section of menu_lateral with a bit of more padding  at left and a bit smaller*/
+
+#menu_lateral a.sub_section {
+    padding: 6px 8px 6px 12px;
+    font-size: 12px;
+}
+
+#menu_lateral a.sub_section::before {
+  content: '• ';
+}
+
+/* loop background color animation on active state */
 
 
 
+#menu_lateral a.active {
+    background-color: #4ab;
+    color: white;
+    animation: animate 30s linear infinite;
+}
+
+#menu_lateral a.sub_active {
+  background-color: #4ab!important;
+  color: white;
+}
+
+
+@keyframes animate {
+  0% {
+      background-color: rgba(68, 169, 187, 0.557);
+  }
+  80% {
+      background-color: rgba(18, 119, 0, 0.611);
+  }
+  100% {
+      background-color: rgba(68, 169, 187, 0.557);
+  }
+}
+
+@keyframes showing {
+  0%{
+    opacity: 0; 
+    height: 0;
+  }
+  30%{
+    display: block;
+    opacity: 0;
+    height: fit-content;
+
+  }
+  80% {
+      opacity: 0.0;
+
+  }
+  100% {
+    
+      opacity: 1;
+      height: fit-content;
+
+  }
+}
+
+@keyframes hiddin {
+  100%{
+    display: none!important;
+    opacity: 0; 
+    height: 0;
+  }
+  80%{
+    display: block;
+    opacity: 0;
+  }
+  30% {
+      opacity: 0.0;
+
+  }
+  0% {
+    
+      opacity: 1;
+      height: fit-content;
+
+  }
+}
+
+
+.hide{
+  display: none;
+  animation: hiddin 2.5 linear;
+}
+.show{
+  animation: 1s showing linear;
+}
