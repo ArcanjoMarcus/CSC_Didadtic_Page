@@ -1,39 +1,16 @@
-<!DOCTYPE html>
-<html lang="pt-br">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">  </script>
-    <title>CSC Didatico</title>
-
-</head>
-
-<body>
-    <!-- a nav bar with available files -->
-
-    <nav>
-        <ul id="menu_sup">
-        </ul>
-    </nav>
-    <article id="content">
-
-        <div class="section">
-            <h1>Introdução</h1>
-
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porta lacinia volutpat. Ut iaculis,
+           # Introdução 
+            
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porta lacinia volutpat. Ut iaculis,
                 orci id bibendum tempus, magna nisi porttitor elit, gravida maximus magna purus sit amet nibh. Phasellus
                 at mi quam. Proin cursus ultricies tempor. Nulla facilisi. Curabitur commodo purus quis massa
                 sollicitudin, sed aliquam quam fringilla. Donec venenatis auctor nisi. Nunc sed massa nulla. Nullam
                 tincidunt mauris tristique pulvinar suscipit. Donec congue ac risus eget efficitur. Nulla in elit
                 fringilla lacus eleifend iaculis. Nulla ut nisl nunc. Curabitur sodales purus tellus, vel convallis
-                ligula vulputate ut.</p>
+                ligula vulputate ut.
 
-            <p>Nam pharetra sodales cursus. Aenean iaculis libero nec <span class="glossary">imperdiet auctor</span>
-                <span class="sidenote_right">Isso diz respeito a Y e X e Z, atenção a <span class="reference_highlight">
-                        Texto De Alguém</span></span>. Praesent ornare tellus neque, in ullamcorper erat aliquet a.
+            Nam pharetra sodales cursus. Aenean iaculis libero nec gloss(imperdiet auctor)
+                note(Isso diz respeito a Y e X e Z, atenção a ref( Texto De Alguém)). Praesent ornare tellus neque, in ullamcorper erat aliquet a.
                 Suspendisse porttitor nisl interdum nisl euismod finibus. Phasellus placerat lorem ac augue ultricies,
                 at fermentum nibh porttitor. Etiam pretium cursus nisi, non vehicula ligula ultricies in. Integer
                 faucibus quam maximus nunc vestibulum, sed malesuada nisl rutrum. Cras nibh risus, ullamcorper in
@@ -272,19 +249,3 @@
 
         </div>
     </article>
-
-    <div id="menu_lateral">
-        <a class="section"> Introdução</a>
-        <div class="sub_section_container hide">
-            <a class="sub_section">Perspectiva X</a>
-            <a class="sub_section">Perspectiva Y</a>
-            <a class="sub_section">Perspectiva Z</a>
-        </div>
-        <a class="section"> Conclusão</a>
-    </div>
-
-    <!-- scripts imports -->
-    <script src="index.js"></script>
-</body>
-
-</html>

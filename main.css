@@ -615,5 +615,5 @@
   animation: hiddin 2.5 linear;
 }
 .show{
-  animation: 1s showing linear;
+  animation: 0.5s showing linear;
 }
